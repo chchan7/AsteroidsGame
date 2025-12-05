@@ -35,12 +35,28 @@ class Spaceship extends Floater
   public void setYcenter (double y) {
     myCenterY = y;
   }
-
-    public double getX() {
+  
+  public void setMPD (double b) {
+    myPointDirection = b;
+  }
+  
+ public double getX() {
     return myCenterX;
   }
   
   public double getY() {
     return myCenterY;
+  }
+  
+  public double getXspeed() {
+    return myXspeed;
+  }
+  
+  public double getYspeed() {
+    return myYspeed;
+  }
+  
+  public double getMPD() {
+    return myPointDirection;
   }
 }
